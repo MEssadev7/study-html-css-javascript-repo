@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form, practice</title>
+    <style>
+      form {
+        width: 30%;
+        height: 34vh;
+        border: 1px solid;
+        margin: 17vh auto;
+        padding: 40px 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px;
+      }
+      .input {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        border: 1px solid gray;
+      }
+      .input:focus {
+        outline: none;
+      }
+      label {
+        display: block;
+        margin-bottom: 3px;
+      }
+      .group {
+        margin-bottom: 20px;
+      }
+      h1 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+      #login {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        border: 1px solid gray;
+        cursor: pointer;
+        background-color: lightgreen;
+        color: green;
+      }
+      #login:hover {
+        background-color: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>form, practice</h1>
+    <form>
+      <div class="group">
+        <label for="">Name:</label>
+        <input class="input" type="text" />
+      </div>
+      <div class="group">
+        <label for="">Email:</label>
+        <input class="input" type="email" />
+      </div>
+      <div class="group">
+        <label for="">Phone:</label>
+        <input class="input" type="number" />
+      </div>
+      <div class="group">
+        <label for="">Address:</label>
+        <input class="input" type="text" />
+      </div>
+      <div class="group">
+        <label for="">Password:</label>
+        <input class="input" type="password" />
+      </div>
+      <div class="group">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>

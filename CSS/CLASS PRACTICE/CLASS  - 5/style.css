@@ -1,0 +1,33 @@
+.contianer {
+  /* border-width: 5px;
+  border-style: dashed; */
+  /* shortcut border */
+  border: 10px solid black;
+
+  /*padding   */
+  /* padding: 10px; */
+
+  /* padding properties */
+  /* padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px; */
+
+  /* padding shortcut use clock wise */
+  /* padding: 10px 20px 30px 40px; */
+
+  border-radius: 20px;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  border: 10px solid black;
+  border-radius: 65px;
+}
+.Block {
+  border: 10px solid black;
+  height: 100px;
+  /* width: 400px; */
+  max-width: 400px;
+  min-width: 1000px;
+}

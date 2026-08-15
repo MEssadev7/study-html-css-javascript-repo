@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .nav-container {
+        width: 930px;
+        height: 50px;
+        display: flex;
+        background: magenta;
+      }
+
+      .home-box,
+      .about-box,
+      .curse-box {
+        flex: 1; /* equal width */
+        height: 50px;
+      }
+      .welcome-box {
+        height: 100px;
+        width: 930px;
+        background-color: cyan;
+        color: black;
+        text-align: center;
+      }
+      .row3 {
+        width: 930px;
+        display: flex;
+      }
+      .llp,
+      .ws {
+        flex: 1; /* Equal width */
+        height: 50px;
+      }
+      .llp {
+        background: bisque;
+      }
+      .ws {
+        background: brown;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="nav-container">
+        <div class="box home-box" text-align="center">home</div>
+        <div class="box about-box" text-align="center">about</div>
+        <div class="box curse-box" text-align="center">Curse</div>
+      </div>
+      <div>
+        <div class="box welcome-box">Welcome</div>
+      </div>
+      <div class="row3">
+        <div class="llp">llp</div>
+        <div class="ws">ws</div>
+      </div>
+    </div>
+  </body>
+</html>

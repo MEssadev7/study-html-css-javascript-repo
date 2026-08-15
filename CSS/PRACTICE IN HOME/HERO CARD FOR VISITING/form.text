@@ -1,0 +1,37 @@
+Your Challenge: The "Dream Destination" Hero Card
+Your task is to build a beautiful, centered profile card for a travel destination (like Kyoto, Paris, or Mars—your choice!).
+
+🧱 Part 1: The HTML Structure
+First, create a simple HTML file. You will need:
+
+A main container <div> for the card.
+
+An <h1> or <h2> for the destination name.
+
+A <p> tag for a short, enticing description.
+
+A <button> that says "Explore Now".
+
+🎨 Part 2: The CSS Requirements
+Create an external stylesheet (or use <style> tags) and apply these rules:
+
+The Card Background: * Use background-image to set a stunning visual of your destination.
+
+Use background-size: cover; and background-position: center; so the image doesn't look stretched or distorted.
+
+Add a fallback background-color just in case the image fails to load.
+
+Text Visibility (The CSS Rules Test):
+
+Change the color of your text so it stands out against your background image.
+
+Give your card container a specific width (e.g., 400px), a height (e.g., 500px), and some padding so the text isn't squishing the edges.
+
+The Button Styling:
+
+Give the button a unique background-color and remove its default border (border: none;).
+
+Change the text color inside the button and add some padding to make it look clickable.
+
+🚀 Bonus Stretch Goal (If you want to flex!)
+Try using a linear gradient on top of your background image so the text is even easier to read. (Hint: Look up how to combine linear-gradient() and url() inside the background-image property).

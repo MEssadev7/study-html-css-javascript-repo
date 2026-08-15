@@ -1,0 +1,384 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    "Roboto",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #b3b3b3;
+  text-decoration: underline;
+}
+
+/* Top Announcement Banner */
+.top-banner {
+  background: linear-gradient(90deg, #5b0060 0%, #e50914 100%);
+  text-align: center;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Header & Hero Section */
+.hero {
+  position: relative;
+  min-height: 80vh;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/d8da0329-5166-4be0-8d5a-be930064d262/32d84a32-9a3b-4828-9d22-13eb67b7e3e2/PK-en-20240318-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+    center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+}
+
+.logo {
+  color: #e50914;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-red {
+  background-color: #e50914;
+  color: #ffffff;
+}
+
+.btn-red:hover {
+  background-color: #c11119;
+}
+
+.btn-signin {
+  padding: 7px 18px;
+  font-size: 0.95rem;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  text-align: center;
+  max-width: 850px;
+  padding: 40px 20px;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+}
+
+/* Email Form */
+.email-form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.email-form input {
+  padding: 16px;
+  min-width: 360px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  background: rgba(15, 15, 15, 0.75);
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.btn-get-started {
+  padding: 14px 28px;
+  font-size: 1.3rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.terms-note {
+  font-size: 0.85rem;
+  color: #b3b3b3;
+  margin-top: 12px;
+}
+
+.curved-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color: #000000;
+  margin: 10px 0;
+}
+
+.curved-divider svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 35px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Trending Row */
+.trending-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 180px;
+  height: 250px;
+}
+
+.card .rank {
+  position: absolute;
+  left: -15px;
+  bottom: -10px;
+  font-size: 6rem;
+  font-weight: 900;
+  color: #000;
+  -webkit-text-stroke: 2px #595959;
+  z-index: 2;
+  line-height: 1;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #e50914;
+}
+
+/* Reasons Grid */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.reason-card {
+  background: linear-gradient(135deg, #192247 0%, #210e17 100%);
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reason-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.reason-card p {
+  color: #b3b3b3;
+  font-size: 0.95rem;
+}
+
+.card-icon {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  font-size: 2.5rem;
+}
+
+/* FAQ Section  */
+/* FAQ Container */
+.faq-section {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Base Accordion Item */
+.faq-item {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.faq-item:hover {
+  background-color: #414141;
+}
+
+/* Question Header (Summary) */
+.faq-question {
+  padding: 24px 30px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none; /* Hide default arrow in standard browsers */
+}
+
+/* Hide default arrow in WebKit/Safari */
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+/* Plus Icon */
+.faq-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate Plus (+) to Cross (x) when open */
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* Answer Drawer */
+.faq-answer {
+  padding: 24px 30px;
+  background-color: #2d2d2d;
+  border-top: 2px solid #111111;
+}
+
+.faq-answer p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.bottom-email-box {
+  text-align: center;
+}
+
+.bottom-email-box p {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+/* Footer */
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #b3b3b3;
+}
+
+.footer-contact {
+  margin-bottom: 30px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+}
+
+.lang-picker select {
+  background: #0f0f0f;
+  color: #ffffff;
+  border: 1px solid #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+.copyright {
+  font-size: 0.85rem;
+}
+
+/* Responsive queries */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .email-form {
+    flex-direction: column;
+  }
+  .email-form input,
+  .btn-get-started {
+    width: 100%;
+    min-width: 0;
+  }
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

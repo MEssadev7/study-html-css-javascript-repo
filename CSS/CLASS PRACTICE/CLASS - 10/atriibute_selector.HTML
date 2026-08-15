@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selectors</title>
+    <style>
+      /* existence selector */
+      div[class="para0"] {
+        color: red;
+        font-size: 20px;
+      }
+      /* equality selector */
+      div[class="dog"] {
+        color: blue;
+        font-size: 18px;
+      }
+      /* space selector */
+      div[class~="para2"] {
+        color: green;
+        font-size: 16px;
+      }
+      /* prefix selector */
+      div[class^="para3"] {
+        color: orange;
+        font-size: 14px;
+      }
+      /* suffix selector */
+      div[class$="para4"] {
+        color: purple;
+        font-size: 12px;
+      }
+      /* substring selector */
+      div[class*="para5"] {
+        color: brown;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Existence Selector -->
+    <div class="para0">
+      { Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ut ab
+      alias sed natus reiciendis mollitia suscipit dolor consequatur enim ipsa
+      sit soluta recusandae voluptas quae aliquam amet expedita, voluptates
+      doloribus ex molestiae! Velit voluptate provident commodi vero nam
+      molestias! }
+    </div>
+    <!-- Equality Selector -->
+    <div class="dog">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ut ab
+      alias sed natus reiciendis mollitia suscipit dolor consequatur enim ipsa
+      sit soluta recusandae voluptas quae aliquam amet expedita, voluptates
+      doloribus ex molestiae! Velit voluptate provident commodi vero nam
+      molestias! }
+    </div>
+    <!-- space selector -->
+    <div class="para2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ut ab
+      alias sed natus reiciendis mollitia suscipit dolor consequatur enim ipsa
+      sit soluta recusandae voluptas quae aliquam amet expedita, voluptates
+      doloribus ex molestiae! Velit voluptate provident commodi vero nam
+      molestias! }
+    </div>
+    <!-- prefix selector -->
+    <div class="para3">
+      { Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ut ab
+      alias sed natus reiciendis mollitia suscipit dolor consequatur enim ipsa
+      sit soluta recusandae voluptas quae aliquam amet expedita, voluptates
+      doloribus ex molestiae! Velit voluptate provident commodi vero nam
+      molestias! }
+    </div>
+    <!-- suffix selector -->
+    <div class="para4">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ut ab
+      alias sed natus reiciendis mollitia suscipit dolor consequatur enim ipsa
+      sit soluta recusandae voluptas quae aliquam amet expedita, voluptates
+      doloribus ex molestiae! Velit voluptate provident commodi vero nam
+      molestias! }
+    </div>
+    <!-- substring selector -->
+    <div class="para5">
+      { Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ut ab
+      alias sed natus reiciendis mollitia suscipit dolor consequatur enim ipsa
+      sit soluta recusandae voluptas quae aliquam amet expedita, voluptates
+      doloribus ex molestiae! Velit voluptate provident commodi vero nam
+      molestias! }
+    </div>
+  </body>
+</html>

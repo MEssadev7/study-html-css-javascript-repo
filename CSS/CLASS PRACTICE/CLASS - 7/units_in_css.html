@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>unit in css</title>
+    <style>
+      /* unit in css */
+      /* two types of units  */
+      /* absolute:px,cm,etc (independant. | .fixed) */
+      /* relative:em,em, %,viewport units (vw, vh), (Dependantant) */
+      /* rem: root element ( work with root element (html)) */
+      /* em: element (work with parent element) */
+      /* Absolute (px): بالکل فکسڈ (Fixed) ہوتا ہے، یہ کبھی تبدیل نہیں ہوتا۔Relative (rem, em, %, vw, vh): لچکدار (Flexible) ہوتا ہے، یہ دوسری چیزوں کے سائز کے مطابق خود کو بدلتا ہے۔rem اور em کا فرق: rem ہمیشہ مین روٹ (<html>) کے سائز کو دیکھتا ہے، جبکہ em اپنے قریبی پیرنٹ (Parent) ایلیمنٹ کے سائز کو دیکھتا ہے۔ */
+      .container {
+        border: 1px solid black;
+        /* height: 400px; */
+        height: 50vh;
+        /* Fixed Width */
+        /* width: 500px; */
+        /* Relative Units */
+        /* width: 30%; */
+        /* width: 30vw; */
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">WELCOME TO LEARNING CODE</div>
+  </body>
+</html>

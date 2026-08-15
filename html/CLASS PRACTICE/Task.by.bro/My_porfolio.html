@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Muhammad Essa | Portfolio</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #0f172a;
+        color: white;
+      }
+
+      /* Navbar */
+
+      header {
+        background: #020617;
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav h2 {
+        color: #38bdf8;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        color: #38bdf8;
+      }
+
+      /* Home */
+
+      #home {
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        padding: 20px;
+      }
+
+      #home h1 {
+        font-size: 45px;
+      }
+
+      #home span {
+        color: #38bdf8;
+      }
+
+      #home p {
+        font-size: 18px;
+        margin: 20px;
+      }
+
+      .btn {
+        background: #38bdf8;
+
+        padding: 12px 30px;
+
+        border-radius: 25px;
+
+        text-decoration: none;
+
+        color: black;
+      }
+
+      /* Sections */
+
+      section {
+        padding: 90px 10%;
+      }
+
+      section h1 {
+        text-align: center;
+
+        font-size: 35px;
+
+        margin-bottom: 30px;
+      }
+
+      /* Cards */
+
+      .cards {
+        display: flex;
+
+        justify-content: center;
+
+        gap: 25px;
+
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background: #1e293b;
+
+        padding: 25px;
+
+        width: 260px;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+
+        background: #334155;
+      }
+
+      /* Contact */
+
+      #contact p {
+        text-align: center;
+
+        font-size: 18px;
+
+        margin: 10px;
+      }
+
+      /* Footer */
+
+      footer {
+        background: #020617;
+
+        text-align: center;
+
+        padding: 20px;
+      }
+
+      /* Mobile */
+
+      @media (max-width: 700px) {
+        nav {
+          flex-direction: column;
+        }
+
+        nav ul {
+          margin-top: 15px;
+        }
+
+        #home h1 {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h2>Muhammad Essa</h2>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#skills">Skills</a></li>
+
+          <li><a href="#projects">Projects</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div>
+        <h1>
+          Hello, I'm
+
+          <span>Muhammad Essa</span>
+        </h1>
+
+        <h2>Frontend Developer</h2>
+
+        <p>I am a Web Development student learning modern web technologies.</p>
+
+        <a class="btn" href="#contact"> Contact Me </a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1>About Me</h1>
+
+      <p style="text-align: center; font-size: 18px">
+        I am Muhammad Essa. I am learning Web Development at SMIT (Saylani Mass
+        IT Training) Aziz Jan Trust. I have completed HTML and currently
+        learning CSS. My goal is to become a professional frontend developer.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h1>My Skills</h1>
+
+      <div class="cards">
+        <div class="card">
+          <h3>HTML</h3>
+
+          <p>Website Structure</p>
+        </div>
+
+        <div class="card">
+          <h3>CSS</h3>
+
+          <p>Website Designing</p>
+        </div>
+
+        <div class="card">
+          <h3>Git & GitHub</h3>
+
+          <p>Version Control</p>
+        </div>
+
+        <div class="card">
+          <h3>JavaScript</h3>
+
+          <p>Learning Programming</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1>My Projects</h1>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Portfolio Website</h3>
+
+          <p>Personal portfolio using HTML & CSS</p>
+        </div>
+
+        <div class="card">
+          <h3>Landing Page</h3>
+
+          <p>Responsive website design practice</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact Me</h1>
+
+      <p>Email: muhammad.essa9078@gmail.com</p>
+
+      <p>GitHub: MEssadev7</p>
+
+      <p>LinkedIn: linkedin.com/in/Muhammad essa</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Muhammad Essa | Portfolio</p>
+    </footer>
+  </body>
+</html>

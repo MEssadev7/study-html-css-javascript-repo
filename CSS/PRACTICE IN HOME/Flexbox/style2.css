@@ -1,0 +1,13 @@
+.flex-example {
+  height: 1320px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-example .flexitem {
+  color: azure;
+  background-color: rgb(161, 38, 161);
+  text-align: center;
+  margin: 10px;
+  width: 500px;
+}

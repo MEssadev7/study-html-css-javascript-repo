@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>link in css</title>
+    <style>
+      /* link: it have three states */
+      /* link, visited, hover, active */
+      .google:link {
+        color: red;
+        text-decoration: underline;
+        border: 2px solid purple;
+      }
+
+      .google:visited {
+        color: rgb(101, 149, 101);
+      }
+      .google:hover {
+        border-radius: 15px;
+        color: blue;
+        box-shadow: 0px 0px 10px 5px #0ff;
+      }
+      .linkedin:link {
+        color: red;
+        text-decoration: underline;
+        border: 2px solid purple;
+      }
+
+      .linkedin:visited {
+        color: rgb(150, 93, 137);
+      }
+      .linkedin:hover {
+        border-radius: 15px;
+        color: blue;
+        box-shadow: 0px 0px 10px 5px #0ff;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="google" href="https://www.google.com"> Google</a>
+    <a class="linkedin" href="https://www.linkedin.com"> LinkedIn</a>
+  </body>
+</html>

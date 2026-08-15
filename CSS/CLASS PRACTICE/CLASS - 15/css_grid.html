@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💛CSS GRID💚</title>
+    <style>
+      .grid-container {
+        border: 1px solid;
+        height: 55vh;
+        width: 70vw;
+        display: grid;
+
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+      }
+      .grid_item {
+        border: 1px solid black;
+      }
+      li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="grid-container">
+        <li class="grid_item">Real Madrid</li>
+        <li class="grid_item">Barcelona</li>
+        <li class="grid_item">Atletico</li>
+        <li class="grid_item">Sevilla</li>
+        <li class="grid_item">Valencia</li>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>

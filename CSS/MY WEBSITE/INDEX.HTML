@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M. Essa - Advanced MERN Portfolio</title>
+    <style>
+      /* =========================================
+           ADVANCED AI & CYBERPUNK THEME CSS
+           ========================================= */
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap");
+
+      :root {
+        --bg-color: #030303;
+        --nav-bg: rgba(3, 3, 3, 0.85);
+        --neon-blue: #00f0ff;
+        --neon-purple: #8a2be2;
+        --neon-green: #00ff66;
+        --text-main: #ffffff;
+        --text-dim: #a0a0a0;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        overflow-x: hidden;
+        /* Advanced Cyber Grid Background */
+        background-image:
+          linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+          radial-gradient(
+            circle at 50% 50%,
+            rgba(138, 43, 226, 0.1),
+            transparent 50%
+          );
+        background-size:
+          40px 40px,
+          40px 40px,
+          100% 100%;
+        background-attachment: fixed;
+      }
+
+      /* --- SLEEK TOP NAVBAR --- */
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        background: var(--nav-bg);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        z-index: 1000;
+      }
+
+      .logo-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .logo-img {
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+        object-fit: cover;
+        border: 1px solid var(--neon-blue);
+        box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+      }
+
+      .logo-text {
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: var(--text-main);
+        text-shadow: 0 0 8px var(--neon-blue);
+      }
+
+      nav ul {
+        display: flex;
+        gap: 35px;
+        list-style: none;
+      }
+
+      nav ul li {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--text-dim);
+        cursor: pointer;
+        transition: 0.3s;
+        position: relative;
+      }
+
+      nav ul li:hover,
+      nav ul li.active {
+        color: var(--neon-blue);
+        text-shadow: 0 0 10px rgba(0, 240, 255, 0.8);
+      }
+
+      nav ul li.active::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: var(--neon-blue);
+        box-shadow: 0 0 12px var(--neon-blue);
+      }
+
+      /* --- MAIN CONTAINER & TABS --- */
+      .main-container {
+        margin-top: 100px;
+        padding: 20px 5%;
+        min-height: calc(100vh - 100px);
+      }
+
+      .tab-content {
+        display: none;
+        animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* --- HERO SECTION (HOME) --- */
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 40px;
+      }
+
+      .hero-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .hero-text h1 {
+        font-size: 4.5rem;
+        line-height: 1.1;
+        margin-bottom: 20px;
+      }
+
+      .hero-text h1 span {
+        background: linear-gradient(
+          to right,
+          var(--neon-blue),
+          var(--neon-purple)
+        );
+        -webkit-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .hero-text p {
+        font-size: 1.3rem;
+        color: var(--text-dim);
+        margin-bottom: 30px;
+        line-height: 1.6;
+        max-width: 600px;
+      }
+
+      .hero-image-box {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        min-width: 300px;
+        position: relative;
+      }
+
+      /* Rotating border effect around image */
+      .hero-img-wrapper {
+        position: relative;
+        padding: 5px;
+        border-radius: 20px;
+        background: linear-gradient(
+          45deg,
+          var(--neon-blue),
+          var(--neon-purple),
+          var(--neon-blue)
+        );
+        background-size: 200% 200%;
+        animation: gradientRotate 3s ease infinite;
+      }
+
+      @keyframes gradientRotate {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .hero-img {
+        width: 320px;
+        height: 320px;
+        border-radius: 15px;
+        object-fit: cover;
+        background-color: #111;
+        display: block;
+      }
+
+      /* --- MERN ICONS & CARDS --- */
+      .stack-icons {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .stack-icon {
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s;
+      }
+
+      .stack-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .stack-icon:hover {
+        transform: translateY(-10px);
+        border-color: var(--neon-blue);
+        box-shadow: 0 10px 20px rgba(0, 240, 255, 0.2);
+        background: rgba(0, 240, 255, 0.05);
+      }
+
+      .btn-neon {
+        display: inline-block;
+        padding: 14px 35px;
+        background: rgba(0, 240, 255, 0.05);
+        color: var(--neon-blue);
+        border: 1px solid var(--neon-blue);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+      }
+
+      .btn-neon:hover {
+        background: var(--neon-blue);
+        color: #000;
+        box-shadow: 0 0 30px var(--neon-blue);
+        transform: scale(1.05);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+      }
+
+      .card {
+        background: rgba(20, 20, 20, 0.6);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 35px;
+        border-radius: 15px;
+        transition: 0.4s;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--neon-blue),
+          transparent
+        );
+        transition: 0.5s;
+      }
+
+      .card:hover::before {
+        left: 100%;
+      }
+
+      .card:hover {
+        border-color: var(--neon-purple);
+        box-shadow: 0 10px 30px rgba(138, 43, 226, 0.15);
+        transform: translateY(-8px);
+      }
+
+      .card h3 {
+        color: var(--text-main);
+        margin-bottom: 12px;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .card p {
+        color: var(--text-dim);
+        margin-bottom: 25px;
+        line-height: 1.6;
+      }
+
+      h2.section-title {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+        color: var(--text-main);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      }
+      h2.section-title span {
+        color: var(--neon-blue);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ==========================================
+         TOP NAVBAR
+         ========================================== -->
+    <header>
+      <div class="logo-box">
+        <!-- 👉 YAHAN APNE "iCoder" LOGO KA URL DALEIN -->
+        <img
+          src="https://i.ytimg.com/vi/r3990ZoIpCU/maxresdefault.jpg"
+          alt="iCoder Logo"
+          class="logo-img"
+        />
+        <div class="logo-text">iCoder</div>
+      </div>
+
+      <nav>
+        <ul>
+          <li class="nav-btn active" onclick="openTab('home')">Home</li>
+          <li class="nav-btn" onclick="openTab('about')">About</li>
+          <li class="nav-btn" onclick="openTab('projects')">Projects</li>
+          <li class="nav-btn" onclick="openTab('contact')">Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ==========================================
+         MAIN CONTENT TABS
+         ========================================== -->
+    <div class="main-container">
+      <!-- 1. HOME TAB -->
+      <div id="home" class="tab-content active">
+        <div class="hero">
+          <div class="hero-text">
+            <p
+              style="
+                color: var(--neon-blue);
+                font-weight: bold;
+                letter-spacing: 2px;
+              "
+            >
+              // SYSTEM.ONLINE
+            </p>
+            <h1>Hi, I'm <br /><span>M. Essa</span></h1>
+            <p>
+              Future Full Stack Web Developer. I build advanced, scalable, and
+              beautifully designed web applications.
+            </p>
+
+            <!-- MERN STACK ICONS (Advanced Feature) -->
+            <div class="stack-icons">
+              <div class="stack-icon" title="MongoDB">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDB"
+                />
+              </div>
+              <div class="stack-icon" title="Express.js">
+                <!-- Invert filter makes the black Express logo white -->
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                  style="filter: invert(1)"
+                  alt="Express.js"
+                />
+              </div>
+              <div class="stack-icon" title="React.js">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React"
+                />
+              </div>
+              <div class="stack-icon" title="Node.js">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                />
+              </div>
+            </div>
+
+            <a class="btn-neon" onclick="openTab('projects')">View Workspace</a>
+          </div>
+
+          <div class="hero-image-box">
+            <div class="hero-img-wrapper">
+              <!-- 👉 YAHAN APNI (M. ESSA) PICTURE KA URL DALEIN -->
+              <img src="my image.png" alt="M. Essa" class="hero-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. ABOUT TAB -->
+      <div id="about" class="tab-content">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <p
+          style="
+            font-size: 1.2rem;
+            color: var(--text-dim);
+            margin-top: 15px;
+            max-width: 850px;
+            line-height: 1.8;
+          "
+        >
+          I am a passionate student at
+          <strong style="color: var(--neon-blue)">SMIT Peshawar</strong>. My
+          journey revolves around mastering the MERN stack architecture. I love
+          turning complex problems into simple, beautiful, and intuitive
+          designs.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>Frontend Engineering</h3>
+            <p>
+              React.js, HTML5, CSS3, JavaScript. Focused on building highly
+              interactive, fast, and accessible user interfaces.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Backend & Database</h3>
+            <p>
+              Node.js, Express.js, and MongoDB. Designing secure RESTful APIs
+              and managing scalable NoSQL databases.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. PROJECTS TAB (AI-Web link removed) -->
+      <div id="projects" class="tab-content">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="grid">
+          <!-- Aapka Original Link -->
+          <div class="card">
+            <h3>📂 My Second Repo</h3>
+            <p>
+              My foundational repository demonstrating core programming logic,
+              algorithms, and web development tasks.
+            </p>
+            <a
+              href="https://github.com/MEssadev7/my-second-repo"
+              target="_blank"
+              class="btn-neon"
+              style="padding: 10px 20px; font-size: 0.9rem"
+              >View Repository</a
+            >
+          </div>
+
+          <!-- Ek Future Placeholder Project taake layout acha lagay -->
+          <div class="card">
+            <h3>🚀 MERN Stack App (Coming Soon)</h3>
+            <p>
+              A full-stack application integrating MongoDB, Express, React, and
+              Node.js for real-time data processing.
+            </p>
+            <button
+              class="btn-neon"
+              style="
+                padding: 10px 20px;
+                font-size: 0.9rem;
+                opacity: 0.5;
+                cursor: not-allowed;
+              "
+            >
+              In Development
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. CONTACT TAB -->
+      <div id="contact" class="tab-content">
+        <h2 class="section-title">Establish <span>Connection</span></h2>
+        <p
+          style="
+            font-size: 1.2rem;
+            color: var(--text-dim);
+            margin-top: 15px;
+            margin-bottom: 35px;
+          "
+        >
+          Open for opportunities, collaborations, or just a tech chat. Connect
+          with me below.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3 style="color: #0077b5">LinkedIn Profile</h3>
+            <p>Let's connect professionally and grow our network together.</p>
+            <a
+              href="https://www.linkedin.com/in/muhammad-essa-7b4618418/"
+              target="_blank"
+              class="btn-neon"
+              style="padding: 10px 20px; font-size: 0.9rem"
+              >Connect</a
+            >
+          </div>
+          <div class="card">
+            <h3 style="color: #ea4335">Direct Email</h3>
+            <p>Send me an email directly. I usually respond within 24 hours.</p>
+            <a
+              href="mailto:muhammad.essa9078@gmail.com"
+              class="btn-neon"
+              style="padding: 10px 20px; font-size: 0.9rem"
+              >Send Email</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         JAVASCRIPT LOGIC
+         ========================================== -->
+    <script>
+      function openTab(tabId) {
+        // Hide all tab content
+        let contents = document.querySelectorAll(".tab-content");
+        contents.forEach((content) => {
+          content.classList.remove("active");
+        });
+
+        // Remove highlight from all nav buttons
+        let btns = document.querySelectorAll(".nav-btn");
+        btns.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+
+        // Show selected tab with animation
+        document.getElementById(tabId).classList.add("active");
+
+        // Highlight clicked nav button
+        event.target.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .fath {
+        height: 85vh;
+        display: flex;
+        border: 1px solid;
+      }
+      .child {
+        width: 200px;
+        height: 150px;
+        border: 1px solid black;
+      }
+
+      /* these all property are command on child only */
+
+      /* order  */
+
+      /* .child_1 {
+        order: 1;
+      }
+      .child_2 {
+        order: 2;
+      } */
+
+      /* flex shrink */
+      /* .child_1 {
+        flex-grow: 4;
+      }
+      .child_2 {
+        flex-grow: 2;
+      } */
+
+      /* flex shrink .child_1 {
+        flex-shrink: 2;
+      }
+      .child_2 {
+        flex-shrink: 3;
+      } */
+
+      /* flex basis */
+      /* .child_1 {
+        flex-basis: auto;
+      }
+      .child_2 {
+        flex-basis: 3;
+      } */
+
+      /* align self */
+      .child_1 {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fath">
+      <div class="child child_1">1</div>
+      <div class="child child_2">2</div>
+      <div class="child child_3">3</div>
+      <div class="child child_4">4</div>
+      <div class="child child_5">5</div>
+    </div>
+  </body>
+</html>

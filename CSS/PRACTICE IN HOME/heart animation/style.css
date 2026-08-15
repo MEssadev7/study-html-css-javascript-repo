@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  background-color: #050505;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base Heart Shape using pseudo-elements */
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  animation: pulse 1.2s infinite alternate ease-in-out;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #d946ef;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  /* Glowing box shadows for neon effect */
+  box-shadow:
+    0 0 20px #d946ef,
+    0 0 40px #a855f7,
+    0 0 60px #a855f7;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/* Pulsing Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    filter: drop-shadow(0 0 10px #d946ef);
+  }
+  100% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 30px #a855f7);
+  }
+}

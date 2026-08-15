@@ -1,0 +1,84 @@
+/* General Page Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #030712; /* Very dark background for the page */
+  padding: 20px;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b1121; /* Dark blue/grey background */
+  padding: 15px 30px;
+  border-radius: 16px; /* Rounded corners like in the screenshot */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo Styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  background: linear-gradient(135deg, #a855f7, #7e22ce); /* Purple gradient */
+  color: white;
+  font-family: monospace;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #94a3b8; /* Light slate grey text */
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffffff; /* Turns white on hover */
+}
+
+/* Contact Button */
+.btn-contact {
+  background-color: #1e293b; /* Darker grey background */
+  color: #e2e8f0;
+  border: 1px solid #334155; /* Subtle border */
+  padding: 10px 24px;
+  border-radius: 30px; /* Pill shape */
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #334155; /* Slightly lighter on hover */
+  color: white;
+}

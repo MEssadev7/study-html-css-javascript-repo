@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeeksforGeeks Survey Form 📄</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+      }
+
+      /* Creates the green frame around the form */
+      .outer-container {
+        background-color: #00b562; /* GeeksforGeeks Green */
+        padding: 15px;
+        width: 100%;
+        max-width: 480px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+      }
+
+      /* Header styling */
+      h1 {
+        color: black;
+        text-align: center;
+        margin: 10px 0 20px 0;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      /* White form body inside the green frame */
+      .form-body {
+        background-color: white;
+        padding: 25px;
+        box-sizing: border-box;
+      }
+
+      /* Form spacing groups */
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      /* Main labels styling */
+      .field-label {
+        display: block;
+        font-size: 13px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 6px;
+      }
+
+      /* Text, Email, Number inputs, and Dropdown styling */
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #767676;
+        border-radius: 2px;
+        box-sizing: border-box;
+        font-size: 13px;
+        font-family: inherit;
+      }
+
+      /* Alignment and spacing for Radios and Checkboxes */
+      .option-group {
+        display: block;
+        font-size: 13px;
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+
+      .option-group input {
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+
+      /* Submit button styling */
+      .submit-btn {
+        background-color: #00b562;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+        border-radius: 2px;
+      }
+
+      .submit-btn:hover {
+        background-color: #009e52;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-container">
+      <h1>GeeksforGeeks Survey Form</h1>
+
+      <form class="form-body">
+        <div class="form-group">
+          <label class="field-label" for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            value="muhammad essa"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="field-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your Email"
+            value="muhammad.essa@9087.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="field-label" for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            placeholder="Enter your age"
+            value="18"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="field-label" for="role"
+            >Which option best describes you?</label
+          >
+          <select id="role">
+            <option value="student">Student</option>
+            <option value="intern" selected>Intern</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="field-label"
+            >Would you recommend GeeksforGeeks to a friend?</label
+          >
+          <label class="option-group">
+            <input type="radio" name="recommend" value="yes" checked /> Yes
+          </label>
+          <label class="option-group">
+            <input type="radio" name="recommend" value="no" /> No
+          </label>
+          <label class="option-group">
+            <input type="radio" name="recommend" value="maybe" /> Maybe
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-label">
+            Languages and Frameworks known (Check all that apply)
+          </label>
+          <label class="option-group"><input type="checkbox" /> C</label>
+          <label class="option-group">
+            <input type="checkbox" checked />
+            C++</label
+          >
+          <label class="option-group"><input type="checkbox" /> C#</label>
+          <label class="option-group"
+            ><input type="checkbox" checked /> Java</label
+          >
+          <label class="option-group"><input type="checkbox" /> Python</label>
+          <label class="option-group"
+            ><input type="checkbox" checked /> JavaScript</label
+          >
+          <label class="option-group"
+            ><input type="checkbox" checked /> React</label
+          >
+          <label class="option-group"><input type="checkbox" /> Angular</label>
+          <label class="option-group"><input type="checkbox" /> Django</label>
+          <label class="option-group"><input type="checkbox" /> Spring</label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-label" for="message"
+            >Any comments or suggestions</label
+          >
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Type your message here..."
+          >
+write here</textarea
+          >
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

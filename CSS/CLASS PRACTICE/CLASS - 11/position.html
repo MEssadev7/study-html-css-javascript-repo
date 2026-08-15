@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS position</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      ul {
+        background-color: purple;
+        height: 10vh;
+        width: 100%;
+
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+      }
+      ul > li {
+        border: 1px solid black;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 5px;
+        margin: 3vh 7vw;
+      }
+      .sec-1 {
+        background-color: blueviolet;
+        position: relative;
+        top: 10px;
+      }
+
+      .sec-2 {
+        background-color: rgb(20, 33, 33);
+        position: sticky;
+        left: 30px;
+      }
+
+      .parent {
+        background-color: yellow;
+        border: 2px solid balck;
+        height: 55vh;
+        width: 45vw;
+      }
+
+      .sec-3 {
+        background-color: red;
+        height: 25vh;
+        width: 15vw;
+        border: 1px solid black;
+        position: absolute;
+        right: 40px;
+        bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>link1</li>
+        <li>link2</li>
+        <li>link3</li>
+        <li>link4</li>
+        <li>link5</li>
+      </ul>
+    </header>
+    <section class="sec-1 section"></section>
+    <section class="sec-2 section"></section>
+    <div class="parent">
+      <section class="sec-3"></section>
+    </div>
+  </body>
+</html>

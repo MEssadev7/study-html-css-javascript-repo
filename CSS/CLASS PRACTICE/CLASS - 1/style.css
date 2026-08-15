@@ -1,0 +1,17 @@
+h4 {
+  background-color: yellow;
+  color: red;
+  font-size: 16px;
+  border: 1px solid black;
+}
+
+div {
+  height: 300px;
+  width: 450px;
+  border: 2px solid black;
+}
+
+div img {
+  height: 300px;
+  width: auto;
+}

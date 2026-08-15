@@ -1,0 +1,7 @@
+.main {
+  height: 600px;
+  width: 1300px;
+  background-image: url("Screenshot\ \(16\).png");
+  background-attachment: fixed;
+  overflow: scroll;
+}

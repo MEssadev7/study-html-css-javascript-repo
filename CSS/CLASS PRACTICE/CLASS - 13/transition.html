@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        border: 1px solid black;
+        transform: scale(0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* transition-property: height; */
+        transition-property: transform, border-radius;
+        transition-duration: 4s;
+      }
+      .container:hover {
+        transform: rotate(180deg) scale(1.5);
+        border-radius: 50%;
+        background-image: url("../images/images.png");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Hello World</div>
+  </body>
+</html>

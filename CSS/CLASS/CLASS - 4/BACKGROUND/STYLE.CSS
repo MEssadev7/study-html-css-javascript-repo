@@ -1,0 +1,23 @@
+.container {
+  /* background-color:rgba(135,47,47,0.1); */
+  width: 1000px;
+  height: 500px;
+  /* color:rgb(47,10,10); */
+  /* opacity: 0.8; */
+  background-image: url(../DOG.PNG.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-size:cover; */
+  /* background-size:contain;  */
+  border: 1px solid blue;
+  /* background-size: auto; */
+  /* background-position: center center; */
+  /* background-position: top left; */
+  /* background-position: top right; */
+  /* background-position: bottom left; */
+  /* background-position: bottom right; */
+  /* background-position:40% 10%; */
+}
+/* .text-contianer {
+  background-color: aqua;
+} */
