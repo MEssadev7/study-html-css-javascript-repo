@@ -32,7 +32,8 @@ let b;
 console.log(typeof b);
 
 let c = null;
-console.log(typeof c);
+console.log(c);
+console.log(typeof null);
 
 let abc = Symbol("def");
 console.log(abc);
