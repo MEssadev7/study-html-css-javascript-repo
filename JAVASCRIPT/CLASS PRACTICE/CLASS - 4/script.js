@@ -18,6 +18,7 @@
 
 
 */
+// premative data type
 
 let a = 10;
 console.log(typeof a);
@@ -54,7 +55,12 @@ console.log(
 );
 // (OR)
 // OR table
+// true true = true
+// false false = false
+// true false = true
+// false true = true
 
+// or practice
 console.log(
   email === "test@4gmail.com" || pasword === "MEssadev67" || free == "600day",
 );
