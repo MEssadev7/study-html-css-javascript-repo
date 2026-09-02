@@ -60,3 +60,5 @@ console.log(students); //change with fahad
 students.splice(students.indexOf("sajjad"), 1, "Bilal");
 
 console.log(students);
+
+// to change element use this code (cars[0] = "zaid";)  {usman index is zero so usman change with zaid }
