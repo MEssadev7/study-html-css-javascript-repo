@@ -66,8 +66,7 @@ console.log(`The sum of the number from 1 to 100 is :${sum}`);
 //   positiveNumber = Number(prompt("Enter a positive number:"));
 // }
 
-// =======================         ^23
-223;
+// =======================         ^
 
 // Question 7 :  if not positve number keep asking user to enter a positive number until they enter a positive number
 let positiveNum;
