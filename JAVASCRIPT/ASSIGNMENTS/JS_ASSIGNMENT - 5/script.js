@@ -47,7 +47,7 @@ if (isPremiumUser) {
   console.log(`Not Discount Avalible`);
 }
 
-// step : 7 [Multiple condition (if else   ,   if else   ,  else)]
+// step : 7 [Multiple condition (if else   ,    else if   ,  else)]
 let result1 = Number(prompt(`Enter your marks : `));
 if (result1 >= 90) {
   console.log(`Excellent`);
