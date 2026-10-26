@@ -1,0 +1,12 @@
+|    Event     |              Meaning                     |         Example          |
+|--------------|------------------------------------------|--------------------------|
+| `click`      | Kisi element par click karna             | Button click             |
+| `dblclick`   | Double-click karna                       | Button par do baar click |
+| `mouseover`  | Mouse ko element ke upar le jana         | Image par mouse le jana  |
+| `mouseout`   | Mouse ko element se bahar le jana        | Image se mouse hatana    |
+| `keydown`    | Keyboard ki key press karna              | A key press karna        |
+| `keyup`      | Key release karna                        | A key chhorna            |
+| `input`      | Input field ki value change hona         | Naam type karna          |
+| `change`     | Input ya selection ki value change hona  | Dropdown select karna    |
+| `submit`     | Form submit karna                        | Login form submit        |
+| `load`       | Page ya resource load hona               | Page load complete hona  |
