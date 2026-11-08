@@ -1,0 +1,29 @@
+/* task :1 wala ha  */
+.highlight {
+  color: rgb(9, 2, 56);
+  background-color: aqua;
+}
+/* task : 2 wla ha  */
+.highlight1 {
+  color: rgb(9, 2, 56);
+  background-color: rgb(29, 143, 23);
+}
+/* task : 3 wala ha  */
+.highlight2 {
+  color: rgb(150, 230, 158);
+  background-color: rgb(88, 46, 61);
+}
+/* task : 5 */
+.active-btn {
+  background-color: rgb(235, 235, 42);
+  color: rgb(221, 6, 6);
+  border: 2px solid rgb(36, 162, 190);
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+/* task :6  */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
